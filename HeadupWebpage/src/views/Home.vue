@@ -6,6 +6,7 @@ import Testimonial from '../components/Testimonial.vue'
 import Cta from '../components/Cta.vue'
 import Blog from '../components/Blog.vue'
 import FooterBlock from '../components/FooterBlock.vue'
+import Navbar from '../components/Navbar.vue'
 
 export default {
     components: {
@@ -15,12 +16,14 @@ export default {
         Testimonial,
         Cta,
         Blog,
-        FooterBlock
+        FooterBlock,
+        Navbar
     }
 }
 </script>
 
 <template>
+    <Navbar />
 <div class="main-ctnr">
 
     <Welcome />
