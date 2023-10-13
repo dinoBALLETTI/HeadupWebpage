@@ -6,7 +6,7 @@
             <div class="header_btn">the button component</div>
         </div>
         <div class="header_img">
-            <img src="../assets/images/laptop.png">
+            <img src="../assets/medias/laptop.png">
         </div>
     </div>
 </template>
