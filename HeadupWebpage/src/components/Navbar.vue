@@ -3,7 +3,7 @@
 <template>
     <div class="news" v-if="newsStatus">
         <div class="newsText">Message nouveauté avec lien de redirection</div>
-        <div class="newsBtn" @click="toggleNews">
+        <div class="newsBtn" @click="toggleNews" style="cursor: pointer">
             <svg 
                 width="32" 
                 height="32" 
@@ -20,15 +20,22 @@
     </div>
 
     <div class="navframe">
-        <div class="home_btn"><img src="../assets/medias/Logo.png"></div>
+
+        <div class="home_btn">
+            <a href = "/">
+                <img src="../assets/medias/Logo.png">
+            </a>
+        </div>
+
         <div class="burger_btn">
             <div class="solutions_btn ctnr">solutions</div>
             <div class="about_btn ctnr">Qui sommes nous?</div>
             <div class="blog_btn ctnr">Notre Blog</div>
-            <div class="demo_btn ctnr">
-                <Button :text="'Réserver une démo'" :link="'your-demo-link'"/>
-            </div>
         </div>
+        <div class="demo_btn ctnr">
+            <Button :text="'Réserver une démo'" :link="'your-demo-link'"/>
+        </div>
+        
     </div>
 </template>
 
@@ -78,10 +85,10 @@ const toggleNews = () => {
     width: 853px;
 }
 .burger_btn {
-    align-items: center;
     display: flex;
-    gap: 11.594px; 
-    width: 751px;
+    width: 530px;
+    align-items: flex-start;
+    gap: 40px;
 }
 
 .ctnr {

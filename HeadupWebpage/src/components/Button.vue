@@ -13,11 +13,13 @@ defineProps(['text', 'link'])
 
 <style scoped>
 .button {
-    padding: 0;
+    margin: 35px;
     border: none;
     border-radius: 24.155px;
     background: var(--violet-darker, #300080);
-    text-decoration: none;
     cursor: pointer
+}
+.button a div {
+    color: white;
 }
 </style>
