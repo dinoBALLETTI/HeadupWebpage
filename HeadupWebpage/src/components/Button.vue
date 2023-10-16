@@ -44,10 +44,17 @@ defineProps(['text', 'link'])
     justify-content: center;
     padding: 10.352px 22.084px 10.352px 31.056px;
     text-decoration: none;
+    transition: background 2s ease; 
 }
+
+.button:hover {
+    background: var(--gradient-violet-rose-dark, linear-gradient(180deg, #E4028D 0%, #6323CD 121.74%));
+}
+
 .button a div {
     color: white;
 }
+
 .arrow {
     align-items: center; 
     display: flex;

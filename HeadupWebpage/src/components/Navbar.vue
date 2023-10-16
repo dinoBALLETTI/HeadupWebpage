@@ -80,7 +80,8 @@ const toggleNews = () => {
     height: 101px;
     justify-content: space-between;
     padding: 0px 65px;
-    gap: 40px
+    gap: 40px;
+    background-color: #F3FCFB
 }
 .home_btn {
     align-items: center;

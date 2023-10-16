@@ -1,5 +1,5 @@
 <script>
-// import Welcome from '../components/Welcome.vue'
+import Welcome from '../components/Welcome.vue'
 // import Partners from '../components/Partners.vue'
 // import Gains from '../components/Gains.vue'
 // import Testimonial from '../components/Testimonial.vue'
@@ -10,7 +10,7 @@ import Navbar from '../components/Navbar.vue'
 
 export default {
     components: {
-        // Welcome,
+        Welcome,
         // Partners,
         // Gains,
         // Testimonial,
@@ -38,6 +38,4 @@ export default {
 </template>
 
 <style scoped>
-.main_ctrn {
-    padding: 0px 85px 0px 65px; }
 </style>
