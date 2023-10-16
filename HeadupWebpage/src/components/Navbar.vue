@@ -2,7 +2,6 @@
 </script>
 <template>
     <div class="news" v-if="newsStatus">
-        <div class="newsText">Message nouveauté avec lien de redirection</div>
         <div class="newsBtn" @click="toggleNews" style="cursor: pointer">
             <svg 
                 width="32" 
@@ -17,6 +16,8 @@
             />
             </svg>
         </div>
+        <div class="newsText">Message nouveauté avec lien de redirection</div>
+        <div></div>
     </div>
 
     <div class="navframe">
@@ -28,7 +29,7 @@
         </div>
 
         <div class="burger_btn">
-            <div class="solutions_btn ctnr">solutions</div>
+            <div class="solutions_btn ctnr">Notre solution</div>
             <div class="about_btn ctnr">Qui sommes nous?</div>
             <div class="blog_btn ctnr">Notre Blog</div>
         </div>
@@ -52,12 +53,10 @@ const toggleNews = () => {
 
 <style scoped>
 .news {
-    align-items: center;
-    align-self: stretch;
     background: var(--orange-dark, #CB6E01);
-    color: var(--grises-white, #FFF); 
     display: flex;
     flex-direction: row-reverse;
+    color: var(--grises-white, #FFF); 
     font-family: Open Sans;
     font-size: 12px;
     font-style: normal;
@@ -65,6 +64,12 @@ const toggleNews = () => {
     gap: 16px;
     line-height: normal; 
     padding: 8px 65px;
+    align-items: center;
+    justify-content: space-between;
+        
+}
+.newsText {
+    justify-content: center;
 }
 .navframe{
     /* background-color: blueviolet; */
