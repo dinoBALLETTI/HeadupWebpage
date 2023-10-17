@@ -13,6 +13,11 @@ import Carousel from '@/components/shared/Carousel.vue'
 <style scoped>
 .partners_ctnr{
     background: var(--White, #FFF);
+    display: flex;
+    padding: 100px 65px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50.455px;
 }
 .partners_carousel{
     display: flex;

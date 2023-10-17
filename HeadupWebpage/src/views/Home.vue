@@ -1,6 +1,7 @@
 <script>
 import Welcome from '../components/Welcome.vue'
 import Partners from '../components/Partners.vue'
+import Proposition from '../components/Proposition.vue'
 // import Gains from '../components/Gains.vue'
 // import Testimonial from '../components/Testimonial.vue'
 // import Cta from '../components/Cta.vue'
@@ -12,6 +13,7 @@ export default {
     components: {
         Welcome,
         Partners,
+        Proposition,
         // Gains,
         // Testimonial,
         // Cta,
@@ -28,6 +30,7 @@ export default {
 
     <Welcome />
     <Partners />
+    <Proposition />
     <Gains />
     <Testimonial />
     <Cta />
