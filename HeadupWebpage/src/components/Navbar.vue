@@ -41,7 +41,7 @@
 </template>
 
 <script setup>
-import Button from './Button.vue'
+import Button from './shared/Button.vue'
 import { ref } from 'vue'
 
 const newsStatus = ref(true);

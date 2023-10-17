@@ -15,6 +15,7 @@
 <script setup>
 import Button from './Button.vue'
 </script>
+
 <style scoped>
 
 .header_ctnr {
@@ -34,8 +35,8 @@ import Button from './Button.vue'
     padding-right: 30px
 }
 .header_txt1 {
-font-family: Poppins;
-font-weight: 800;
+/* font-family: Poppins;
+font-weight: 800; */
  display: flex;
 
 }
@@ -43,8 +44,8 @@ font-weight: 800;
 .header_txt2 {
     display: flex;
     text-align: justify;
-    font-family: Open Sans;
-font-weight: 400;
+    /* font-family: Open Sans;
+font-weight: 400; */
 }
 
 .header_btn {

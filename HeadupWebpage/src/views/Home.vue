@@ -1,6 +1,6 @@
 <script>
 import Welcome from '../components/Welcome.vue'
-// import Partners from '../components/Partners.vue'
+import Partners from '../components/Partners.vue'
 // import Gains from '../components/Gains.vue'
 // import Testimonial from '../components/Testimonial.vue'
 // import Cta from '../components/Cta.vue'
@@ -11,7 +11,7 @@ import Navbar from '../components/Navbar.vue'
 export default {
     components: {
         Welcome,
-        // Partners,
+        Partners,
         // Gains,
         // Testimonial,
         // Cta,
