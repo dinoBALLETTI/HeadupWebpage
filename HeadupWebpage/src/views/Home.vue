@@ -2,7 +2,7 @@
 import Welcome from '../components/Welcome.vue'
 import Partners from '../components/Partners.vue'
 import Proposition from '../components/Proposition.vue'
-// import Gains from '../components/Gains.vue'
+import Gains from '../components/Gains.vue'
 // import Testimonial from '../components/Testimonial.vue'
 // import Cta from '../components/Cta.vue'
 // import Blog from '../components/Blog.vue'
@@ -14,7 +14,7 @@ export default {
         Welcome,
         Partners,
         Proposition,
-        // Gains,
+        Gains,
         // Testimonial,
         // Cta,
         // Blog,
@@ -41,4 +41,8 @@ export default {
 </template>
 
 <style scoped>
+.main_ctnr {
+    width: 100%;
+    height: 100%
+}
 </style>
