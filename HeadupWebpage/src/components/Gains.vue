@@ -22,6 +22,7 @@
         
     <div class="timeline_ctnr">
         <div class="timelineContent">
+
             <div class="timelineItem">
                 <div class="item">
                     <span><img src="../assets/icons/diamond.svg"></span>
@@ -73,6 +74,7 @@
                     </span>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
@@ -107,12 +109,11 @@
     font-weight: 400;
     line-height: normal; 
 }
-
 .item {
+    width: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60px;
     gap: 16px
 }
 .divider {
