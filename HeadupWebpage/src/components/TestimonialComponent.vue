@@ -19,11 +19,22 @@
     >
     </div>
 
-    <div class="witness">
+    <div class="avatar_ctnr">
         <div class="witnessAvatar"></div>
-        <div class="witnessName">
-            <span>Lucie</span>
-            <span>Cheffe de produit</span>
+        <div class="avatarName"
+            style="
+            display: flex;
+            flex-direction: column;
+            "
+
+        >
+            <a style="
+                color: var(--Black, #000);
+                font-style: normal;
+                font-weight: 600; 
+                "
+            >Lucie</a>
+            <a>Cheffe de produit</a>
         </div>
 
     </div>
@@ -37,7 +48,7 @@
 
     display: flex;
     padding: 100px 65px;
-    direction: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50.436px; 
@@ -55,13 +66,20 @@
     align-items: center;
     justify-content: space-evenly;
 }
+.avatar_ctnr {
+    display: flex;
+    flex-direction: row;
+    gap: 21px
+}
 .witnessAvatar {
     width: 58.842px;
-height: 58.842px;
-border-radius: 58.842px;
-background: url(../assets/medias/avatarLucie.png);
-background-position: center;
-background-size: 100%;
+    height: 58.842px;
+    border-radius: 58.842px;
+    background: url(../assets/medias/avatarLucie.png);
+    background-position: center;
+    background-size: 100%;
 }
-
+.avatarName a {
+    font-family: open Sans;
+}
 </style>
