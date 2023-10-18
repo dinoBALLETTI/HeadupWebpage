@@ -61,4 +61,83 @@ const props = defineProps({
 </template>
 
 <style scoped>
+.card_ctnr {
+    display: flex;
+width: 447px;
+height: 645.199px;
+flex-direction: column;
+align-items: flex-start;
+gap: 25.138px;
+flex-shrink: 0;
+}
+.topPic {
+    width: 435.731px;
+height: 314.229px;
+flex-shrink: 0;
+border-radius: 20px
+}
+.theme{
+    display: flex;
+height: 30px;
+padding: 10px 20px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 15px;
+background: var(--grises-darkest, #20282C);
+color: #F0F3F4;
+font-family: Open Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.72px;
+text-transform: uppercase; 
+}
+.title {
+    color: var(--grises-darkest, var(--Grises-darkest, #20282C));
+font-family: Poppins;
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.snippet {
+    color: var(--Black, #000);
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.time {
+    color: var(--Black, #000);
+font-family: Open Sans;
+font-size: 14.664px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%;
+}
+.date {
+    color: var(--Black, #000);
+text-align: right;
+font-family: Open Sans;
+font-size: 14.664px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 21.996px */
+}
+.link {
+    display: flex;
+    flex-direction: row;
+    color: #000;
+    gap : 10px;
+
+    font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-decoration-line: underline;
+}
 </style>
