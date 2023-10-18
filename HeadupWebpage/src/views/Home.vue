@@ -1,13 +1,13 @@
 <script>
-import Welcome from '../components/Welcome.vue'
-import Partners from '../components/Partners.vue'
-import Proposition from '../components/Proposition.vue'
-import Gains from '../components/Gains.vue'
-// import Testimonial from '../components/Testimonial.vue'
-// import Cta from '../components/Cta.vue'
-// import Blog from '../components/Blog.vue'
-// import FooterBlock from '../components/FooterBlock.vue'
-import Navbar from '../components/Navbar.vue'
+import Welcome from '../components/WelcomeComponent.vue'
+import Partners from '../components/PartnersComponent.vue'
+import Proposition from '../components/PropositionComponent.vue'
+import Gains from '../components/GainsComponent.vue'
+import Testimonial from '../components/TestimonialComponent.vue'
+// import Cta from '../components/CtaComponent.vue'
+// import Blog from '../components/BlogComponent.vue'
+// import FooterBlock from '../components/FooterBlockComponent.vue'
+import Navbar from '../components/NavbarComponent.vue'
 
 export default {
     components: {
@@ -15,7 +15,7 @@ export default {
         Partners,
         Proposition,
         Gains,
-        // Testimonial,
+        Testimonial,
         // Cta,
         // Blog,
         // FooterBlock,

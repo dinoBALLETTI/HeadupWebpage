@@ -1,11 +1,11 @@
 <template>
-    <div v-for="partner in partners">
+    <div v-for="partner in partners" :key="partner">
         <CarouselCard :partner="partner" />
     </div>
 </template>
 
 <script setup>
-import CarouselCard from './CarouselCard.vue';
+import CarouselCard from './CarouselCardItem.vue';
 import bpiLogo from '@/assets/medias/bpiLogo.png';
 import esiaLogo from '@/assets/medias/esiaLogo.png';
 import esjLogo from '@/assets/medias/esjLogo.png';
