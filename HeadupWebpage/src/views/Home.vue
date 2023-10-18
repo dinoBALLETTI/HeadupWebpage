@@ -4,7 +4,7 @@ import Partners from '../components/PartnersComponent.vue'
 import Proposition from '../components/PropositionComponent.vue'
 import Gains from '../components/GainsComponent.vue'
 import Testimonial from '../components/TestimonialComponent.vue'
-// import Cta from '../components/CtaComponent.vue'
+import Cta from '../components/CtaComponent.vue'
 // import Blog from '../components/BlogComponent.vue'
 // import FooterBlock from '../components/FooterBlockComponent.vue'
 import Navbar from '../components/NavbarComponent.vue'
@@ -16,7 +16,7 @@ export default {
         Proposition,
         Gains,
         Testimonial,
-        // Cta,
+        Cta,
         // Blog,
         // FooterBlock,
         Navbar

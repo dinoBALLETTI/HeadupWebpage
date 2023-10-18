@@ -34,14 +34,14 @@
             <div class="blog_btn ctnr">Notre Blog</div>
         </div>
         <div class="demo_btn ctnr">
-            <Button :text="'Réserver une démo'" :link="'your-demo-link'"/>
+            <ButtonItem :text="'Réserver une démo'" :link="'your-demo-link'"/>
         </div>
         
     </div>
 </template>
 
 <script setup>
-import Button from './shared/ButtonItem.vue'
+import ButtonItem from './shared/ButtonItem.vue'
 import { ref } from 'vue'
 
 const newsStatus = ref(true);
