@@ -78,6 +78,28 @@
         </div>
     </div>
 </div>
+
+<div class="quote_ctnr">
+
+        <div class="quote">
+        <img src="../assets/icons/quote.svg" 
+            style="
+                width: 100px;
+                height: 100px;
+                transform: rotate(179.224deg)
+            "
+        >
+        <div class="quote_txt">J’essaie de changer mon discours intérieur et d’être plus positive depuis que j’ai fait le module et ça m’aide vraiment !</div>
+        <img src="../assets/icons/quote.svg" 
+            style="
+                width: 100px;
+                height: 100px;
+            "
+        >
+    </div>
+
+</div>
+
 </template>
 
 <style scoped>
@@ -120,5 +142,21 @@
     width: 4px;
     height: 100px; 
     background-color: black;
+}
+.quote_ctnr {
+    display: flex;
+    direction: column;
+}
+.quote_txt {
+    font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal; 
+}
+.quote {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 </style>
