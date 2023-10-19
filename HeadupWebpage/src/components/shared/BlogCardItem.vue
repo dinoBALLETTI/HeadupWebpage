@@ -29,8 +29,8 @@ const props = defineProps({
         <div class="snippet">{{ snippet }}</div>
 
         <div class="info">
-            <span class="time">{{ time }}</span>
-            <span class="date">{{ date }}</span>
+            <div class="time">{{ time }}</div>
+            <div class="date">{{ date }}</div>
         </div>
 
         <div class="link">
@@ -83,7 +83,7 @@ padding: 10px 20px;
 justify-content: center;
 align-items: center;
 gap: 10px;
-border-radius: 15px;
+border-radius: 30px;
 background: var(--grises-darkest, #20282C);
 color: #F0F3F4;
 font-family: Open Sans;
@@ -101,6 +101,12 @@ font-size: 28px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content : space-between;
+    width: 436px;
 }
 .snippet {
     color: var(--Black, #000);
@@ -125,7 +131,8 @@ font-family: Open Sans;
 font-size: 14.664px;
 font-style: normal;
 font-weight: 600;
-line-height: 150%; /* 21.996px */
+line-height: 150%;
+
 }
 .link {
     display: flex;
