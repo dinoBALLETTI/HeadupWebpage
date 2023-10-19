@@ -6,9 +6,8 @@ import Gains from '../components/GainsComponent.vue'
 import Testimonial from '../components/TestimonialComponent.vue'
 import Cta from '../components/CtaComponent.vue'
 import Blog from '../components/BlogComponent.vue'
-// import FooterBlock from '../components/FooterBlockComponent.vue'
+import FooterBlock from '../components/FooterBlockComponent.vue'
 import Navbar from '../components/NavbarComponent.vue'
-
 
 </script>
 
