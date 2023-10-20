@@ -1,119 +1,104 @@
-<script>
-</script>
-<template>
-    <div class="nav-ctnr">
-
-        <div class="news" v-if="newsStatus">
-            <div class="newsBtn" @click="toggleNews" style="cursor: pointer">
-                <svg 
-                width="32" 
-                height="32" 
-                viewBox="0 0 32 32" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-            >
-            <path 
-                d="M22.8354 22.3644L22.3639 22.8358C22.1036 23.0961 21.6815 23.0961 21.4211 22.8358L16 17.4146L10.5788 22.8357C10.3185 23.0961 9.89638 23.0961 9.63603 22.8357L9.16462 22.3643C8.90427 22.104 8.90427 21.6819 9.16462 21.4215L14.5858 16.0004L9.16462 10.5792C8.90427 10.3189 8.90427 9.89675 9.16462 9.6364L9.63602 9.165C9.89637 8.90465 10.3185 8.90465 10.5788 9.165L16 14.5862L21.4211 9.16499C21.6815 8.90464 22.1036 8.90464 22.3639 9.16499L22.8354 9.63639C23.0957 9.89674 23.0957 10.3189 22.8354 10.5792L17.4142 16.0004L22.8354 21.4215C23.0957 21.6819 23.0957 22.104 22.8354 22.3644Z" 
-                fill="white"
-            />
-            </svg>
-        </div>
-        <div class="newsText">Message nouveauté avec lien de redirection</div>
-        <div></div>
-    </div>
-
-    <div class="navframe">
-        
-        <div class="home_btn">
-            <a href = "/">
-                <img src="../assets/medias/Logo.png">
-            </a>
-        </div>
-
-        <div class="burger_btn">
-            <div class="solutions_btn ctnr">Notre solution</div>
-            <div class="about_btn ctnr">Qui sommes nous?</div>
-            <div class="blog_btn ctnr">Notre Blog</div>
-        </div>
-        <div class="demo_btn ctnr">
-            <ButtonItem :text="'Réserver une démo'" :link="'your-demo-link'"/>
-        </div>
-        
-    </div>
-</div>
-</template>
-
 <script setup>
-import ButtonItem from './shared/ButtonItem.vue'
-import { ref } from 'vue'
+import { ref } from 'vue';
+import CrossIcon from '@/assets/icons/cross.svg';
+import ButtonItem from './shared/ButtonItem.vue';
+import Burger from '@/assets/icons/burger.svg'
 
 const newsStatus = ref(true);
 const toggleNews = () => {
     newsStatus.value = false
 }
 
+const toggleBurger = () => {
+  var x = document.getElementById("myNav");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+} 
 </script>
+<template>
+    <div class="news" v-if="newsStatus">
+        <div class="news-button" @click="toggleNews" style="cursor: pointer">
+            <img :src="CrossIcon">
+        </div>
+
+        <div class="news-text">Message nouveauté avec lien de redirection</div>
+    </div>
+
+    <div class="nav" id="myNav">
+        <!-- *** Ajouter les liens dans href="" pour chaque <a></a>*** -->
+        <div class="nav__logo">
+            <img src="../assets/medias/Logo.png">
+        </div>
+        <a>Notre Solution</a>
+        <a>Qui sommes nous?</a>
+        <a>Notre Blog</a>
+        <div class="nav__demo-button">
+            <ButtonItem :text="'Réserver une démo'" :link="'your-demo-link'" />
+        </div>
+        <a href="javascript:void(0);" class="icon" @click="toggleBurger">
+            <img :src="Burger">
+        </a>
+    </div>
+</template>
+
+
 
 <style scoped>
-.nav-ctnr {
-    position: fixed;
-    top: 0;
-    width: 100%
-}
 .news {
+    align-items: center;
     background: var(--orange-dark, #CB6E01);
+    color: var(--grises-white, #FFF); 
     display: flex;
     flex-direction: row-reverse;
-    color: var(--grises-white, #FFF); 
     font-family: Open Sans;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     gap: 16px;
+    justify-content: space-between;
     line-height: normal; 
     padding: 8px 65px;
-    align-items: center;
-    justify-content: space-between;
-    
-
-        
 }
-.newsText {
-    justify-content: center;
-}
-.navframe{
-    /* background-color: blueviolet; */
+.nav {
     align-items: center;
-    align-self: stretch; 
+    align-self: stretch;
+    background: var(--vert-primaire-lightest, #F3FCFB);
     display: flex;
     flex-shrink: 0;
-    height: 101px;
+    height: 100px;
     justify-content: space-between;
-    padding: 0px 65px;
-    gap: 40px;
-    background-color: #F3FCFB;
+    padding: 0px 67px;
 }
-.home_btn {
-    align-items: center;
-    display: flex;
-    gap: 40px; 
-    padding: 5px 0px;
-    width: 853px;
-}
-.burger_btn {
-    display: flex;
-    width: 530px;
-    align-items: flex-start;
-    gap: 40px;
+.nav .icon {
+    display: none;
 }
 
-.ctnr {
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal; 
-    white-space: nowrap;
+@media screen and (max-width: 600px) {
+    .nav {
+        padding: 35px;
+    }
+    .nav a {display: none;}
+    .nav__demo-button {display: none;}
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
 }
 
+@media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    display: block;
+    float: none;
+    text-align: left;
+  }
+}
 </style>

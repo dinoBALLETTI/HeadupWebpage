@@ -12,3 +12,9 @@ h3 {
     font-family: Open Sans;
     font-weight: 400
 }
+* {
+    box-sizing: border-box;
+  }
+.body {
+    width: 100%
+}
