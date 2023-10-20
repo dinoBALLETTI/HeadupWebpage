@@ -1,9 +1,11 @@
 <script>
 </script>
 <template>
-    <div class="news" v-if="newsStatus">
-        <div class="newsBtn" @click="toggleNews" style="cursor: pointer">
-            <svg 
+    <div class="nav-ctnr">
+
+        <div class="news" v-if="newsStatus">
+            <div class="newsBtn" @click="toggleNews" style="cursor: pointer">
+                <svg 
                 width="32" 
                 height="32" 
                 viewBox="0 0 32 32" 
@@ -21,7 +23,7 @@
     </div>
 
     <div class="navframe">
-
+        
         <div class="home_btn">
             <a href = "/">
                 <img src="../assets/medias/Logo.png">
@@ -38,6 +40,7 @@
         </div>
         
     </div>
+</div>
 </template>
 
 <script setup>
@@ -52,6 +55,11 @@ const toggleNews = () => {
 </script>
 
 <style scoped>
+.nav-ctnr {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
 .news {
     background: var(--orange-dark, #CB6E01);
     display: flex;
@@ -66,6 +74,8 @@ const toggleNews = () => {
     padding: 8px 65px;
     align-items: center;
     justify-content: space-between;
+    
+
         
 }
 .newsText {
@@ -81,7 +91,7 @@ const toggleNews = () => {
     justify-content: space-between;
     padding: 0px 65px;
     gap: 40px;
-    background-color: #F3FCFB
+    background-color: #F3FCFB;
 }
 .home_btn {
     align-items: center;
