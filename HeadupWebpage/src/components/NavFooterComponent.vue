@@ -15,14 +15,14 @@ import ButtonItem from './shared/ButtonItem.vue';
     padding: 0px 25px 25px 25px;
     position: fixed;
     width: 100%;
+    justify-items: center;
 }
 .footer__btn {
     align-self: end;
-    justify-items: center;
     min-width: auto;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
     .footer{
         display:none;
     }

@@ -1,6 +1,7 @@
 <script setup>
-import Navbar from '../components/NavbarComponent.vue'
-// import Welcome from '../components/WelcomeComponent.vue'
+import NavHeader from '../components/NavHeaderComponent.vue'
+import NavFooter from '../components/NavFooterComponent.vue'
+import Welcome from '../components/WelcomeComponent.vue'
 // import Partners from '../components/PartnersComponent.vue'
 // import Proposition from '../components/PropositionComponent.vue'
 // import Gains from '../components/GainsComponent.vue'
@@ -13,15 +14,16 @@ import Navbar from '../components/NavbarComponent.vue'
 
 <template>
 
-    <Navbar />
-    <!-- <Welcome /> -->
-    <!-- <Partners />
-    <Proposition />
-    <Gains />
-    <Testimonial />
-    <Cta />
-    <Blog />
-    <FooterBlock /> -->
+    <NavHeader/>
+    <NavFooter />
+    <Welcome />
+    <!-- <Partners />     -->
+    <!-- <Proposition /> -->
+    <!-- <Gains />  -->
+    <!-- <Testimonial /> -->
+    <!-- <Cta /> -->
+    <!-- <Blog /> -->
+    <!-- <FooterBlock /> -->
 
 </template>
 

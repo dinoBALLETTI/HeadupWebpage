@@ -1,16 +1,15 @@
 <template>
-<h2>Avec Head Up, vos collaborateurs révèlent tout leur potentiel</h2>
-<h3>
-    Notre programme de coaching mental inspiré par les techniques utilisées dans le sport de haut niveau offre à vos salariés les outils 
-    et les stratégies nécessaires pour optimiser leur performance au travail.
-</h3>
+    <div class="gains__intro">
+        <h2>Avec Head Up, vos collaborateurs révèlent tout leur potentiel</h2>
+        <h3>
+            Notre programme de coaching mental inspiré par les techniques utilisées dans le sport de haut niveau offre à vos salariés les outils 
+            et les stratégies nécessaires pour optimiser leur performance au travail.
+        </h3>
+    </div>
     
 <div class="gains_ctnr">
     
-    <div style="
-            display: flex; 
-            direction: row;
-            align-items: center">
+    <div class="gains__img">
         <img 
         src="../assets/medias/laptop.png" 
         style="
@@ -38,7 +37,7 @@
 
             <div class="timelineItem">
                 <div class="item">
-                    <span><img src="../assets/icons/clock.svg"></span>
+                    <span style="padding: 0px 12px 0px 12px"><img src="../assets/icons/clock.svg"></span>
                     <div class="divider"></div>
                 </div>
                 <div>
@@ -85,7 +84,9 @@
 <style scoped>
 .gains_ctnr {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
+    padding: 25px
 }
 .timelineContent {
     display: flex;
@@ -110,6 +111,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal; 
+    text-align: justify;
+    
 }
 .item {
     width: 60px;
@@ -120,8 +123,24 @@
 }
 .divider {
     width: 4px;
-    height: 100px; 
+    height: 95%; 
     background-color: black;
 }
-
+.gains__img {
+    display: none; 
+    direction: row;
+    align-items: center
+}
+.gains__intro {
+    padding: 25px;
+    width: 100%;
+}
+@media screen and (min-width: 600px) {
+.gains_ctnr {
+    flex-direction: row;
+}
+.gains__img {
+ display:flex
+}
+}
 </style>

@@ -7,14 +7,16 @@ h2 {
     font-family: Poppins;
     font-weight: 700;
 }
-
 h3 {
     font-family: Open Sans;
     font-weight: 400
 }
+
+/* *** RESPONSIVE DESIGN *** */
 * {
     box-sizing: border-box;
-  }
-.body {
+}
+
+body {
     width: 100%
 }
