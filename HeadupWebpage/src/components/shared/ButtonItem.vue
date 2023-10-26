@@ -45,6 +45,7 @@ defineProps(['text', 'link'])
     padding: 10.352px 22.084px 10.352px 31.056px;
     text-decoration: none;
     transition: background 2s ease; 
+    max-width: fit-content;
 }
 
 .button:hover {
