@@ -52,8 +52,9 @@ defineProps(['text', 'link'])
     background: var(--gradient-violet-rose-dark, linear-gradient(180deg, #E4028D 0%, #6323CD 121.74%));
 }
 
-.button a div {
+.button a {
     color: white;
+    text-decoration: none;
 }
 
 .arrow {
