@@ -2,31 +2,31 @@
 import Button from './shared/ButtonItem.vue'
 </script>
 <template>
-    <div class="spacer"></div>
 
 <div class="header-ctnr">
+    
+    <div class="header__txt">
+        <h1 class="header__txt--h1">Boostez les performances de vos salariés en développant leurs soft skills</h1>
+        <h3 class="header__txt--h2">La solution de coaching inspirée de la préparation mentale des sportifs de haut de niveau pour développer les talents de votre entreprise. </h3>
+    </div>
+    <div class="header__btn">
+        <Button :text="'Tester Head Up gratuitement'" link:="'/testpage'" />
+    </div>
 
-        <div class="header__txt">
-            <h1 class="header__txt--h1">Boostez les performances de vos collaborateurs en développant leurs soft skills</h1>
-            <h3 class="header__txt--h2">La solution de coaching inspirée de la préparation mentale des sportifs de haut de niveau pour développer les talents de votre entreprise. </h3>
-        </div>
-        <div class="header__btn">
-            <Button :text="'Tester Head Up gratuitement'" link:="'/testpage'" />
-        </div>
-
-        <div class="header__img"><img src="../assets/medias/laptop.png"></div>
+    <div class="header__img"><img src="../assets/medias/laptop.png"></div>
 </div>
 
 </template>
 
 <style scoped>
+/* *** SHARED PROPERTIES *** */
 .header-ctnr {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 1fr 1fr 1fr;
-    width: 100%;
-    padding-left: 65px;
     height: 100vh;
+    padding-left: 35px;
+    width: 100%;
 }
 .header__txt {
     grid-column: 1 / 2;
@@ -36,40 +36,41 @@ import Button from './shared/ButtonItem.vue'
     grid-row: 3;
 }
 .header__img {
-    display: grid;
+    align-items: center;
     background-image: url('../assets/medias/lady.png');
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: 75%;
-    grid-row: span 3;
+    display: grid;
     grid-column: 2 / 3;
-    align-items: center;
-
+    grid-row: span 3;
 }
 .header__img img {
     max-width: 450px;  
 }
 
-@media screen and (max-width:1100px) {
-.header__img {
-    background-image: none;
-}
-.header__img img {
-    max-width: 100%
-}
-}
+/* *** MOBILE PROPERTIES *** */
 
 @media screen and (max-width:900px) {
     .header-ctnr {
         display:flex;
         flex-direction: column;
+        padding-right: 65px;
         padding-top: 100px;
-        padding-right: 65px
     }
     .header__btn {
         display:none;
     }
+}
 
+/* *** DESKTOP PROPERTIES *** */
 
+@media screen and (max-width:1100px) {
+    .header__img {
+        background-image: none;
+    }
+    .header__img img {
+        max-width: 100%
+    }
 }
 </style>
