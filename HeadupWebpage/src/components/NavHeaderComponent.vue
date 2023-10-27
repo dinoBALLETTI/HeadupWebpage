@@ -15,14 +15,14 @@ const toggleMenu = () => {
 };
 </script>
 <template>
-<div class="nav-ctnr">
     <div class="news" v-if="newsStatus">
-        <div class="news-button" @click="toggleNews" style="cursor: pointer">
+        <div class="news__button" @click="toggleNews" style="cursor: pointer">
             <img :src="CrossIcon">
         </div>
         
-        <div class="news-text">Message nouveauté avec lien de redirection</div>
+        <div class="news__text">Message nouveauté avec lien de redirection</div>
     </div>
+<div class="nav-ctnr">
     
 <!-- *** DESKTOP GROUP *** -->
     <div class="nav--desktop" id="myNav">
@@ -67,7 +67,11 @@ position: fixed;
 width: 100%;
 height: auto;
 z-index: 5;
-padding: 0px 65px 0px 65px ;
+padding: 10px 65px 10px 65px ;
+background: var(--vert-primaire-lightest, #F3FCFB);
+box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25); 
+
+
 
 }
 .news {
@@ -80,21 +84,31 @@ padding: 0px 65px 0px 65px ;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    gap: 16px;
-    justify-content: space-around;
+    grid-template-columns: 10% 1fr 10%;
     line-height: normal; 
     padding: 8px ;
 }
+.news__button {
+    grid-row: 1;
+    grid-column: 3;
+    display: grid;
+margin: auto}
+
+.news__text {
+    grid-row: 1;
+grid-column: 2;
+display: grid;
+margin: auto;
+white-space: nowrap; }
 .nav--desktop {
     display: none;
     height: 100px;
-    background-color: #FFF;
 }
 .nav--mobile{
     display: grid;
     grid-template-columns: 85% 15%;
-    background: #FFF;
     align-content: center;
+    gap: 30px
 }
 .links--mobile {
     display: grid;
@@ -115,6 +129,9 @@ padding: 0px 65px 0px 65px ;
 }
 
 @media screen and (min-width: 1100px) {
+    .news {
+        display: grid;
+    }
     .nav--desktop {
         display: grid;
         grid-template-columns: 20% 80%;
@@ -136,14 +153,15 @@ padding: 0px 65px 0px 65px ;
         grid-column: 2;
         grid-row: 1;
         justify-content: end;
-        background-color: #FFF;
         white-space: nowrap;
     }
     .links--desktop a {
         text-decoration: none;
         color: black;
     }
-
+    .nav-ctnr {
+        box-shadow: none;
+    }
 }
 
 </style>

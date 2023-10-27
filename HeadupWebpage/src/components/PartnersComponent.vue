@@ -12,6 +12,7 @@ import Carousel from '@/components/shared/CarouselItem.vue'
 </script>
 <style scoped>
 .partners_ctnr{
+    width: 100%;
     background: var(--White, #FFF);
     display: flex;
     padding: 100px 65px;
