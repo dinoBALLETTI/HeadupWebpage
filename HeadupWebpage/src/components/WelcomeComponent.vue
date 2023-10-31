@@ -3,7 +3,7 @@ import Button from './shared/ButtonItem.vue'
 </script>
 <template>
 
-<div class="header-ctnr">
+<div class="header__ctnr">
     
     <div class="header__txt">
         <h1 class="header__txt--h1">Boostez les performances de vos salariés en développant leurs soft skills</h1>
@@ -20,7 +20,7 @@ import Button from './shared/ButtonItem.vue'
 
 <style scoped>
 /* *** SHARED PROPERTIES *** */
-.header-ctnr {
+.header__ctnr {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 1fr 1fr 1fr;
@@ -52,7 +52,7 @@ import Button from './shared/ButtonItem.vue'
 /* *** MOBILE PROPERTIES *** */
 
 @media screen and (max-width:900px) {
-    .header-ctnr {
+    .header__ctnr {
         display:flex;
         flex-direction: column;
         padding-right: 65px;

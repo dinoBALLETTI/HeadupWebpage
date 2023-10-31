@@ -7,7 +7,7 @@
         </h3>
     </div>
     
-<div class="gains_ctnr">
+<div class="gains-ctnr">
     
     <div class="gains__img">
         <img 
@@ -19,10 +19,10 @@
             >
         </div>
         
-    <div class="timeline_ctnr">
-        <div class="timelineContent">
+    <div class="timeline-ctnr">
+        <div class="timeline__content">
 
-            <div class="timelineItem">
+            <div class="timeline__items-ctnr">
                 <div class="item">
                     <span><img src="../assets/icons/diamond.svg"></span>
                     <div class="divider"></div>
@@ -35,7 +35,7 @@
                 </div>
             </div>
 
-            <div class="timelineItem">
+            <div class="timeline__items-ctnr">
                 <div class="item">
                     <span style="padding: 0px 12px 0px 12px"><img src="../assets/icons/clock.svg"></span>
                     <div class="divider"></div>
@@ -48,7 +48,7 @@
                 </div>
             </div>
 
-            <div class="timelineItem">
+            <div class="timeline__items-ctnr">
                 <div class="item">
                     <span><img src="../assets/icons/weight.svg"></span>
                     <div class="divider"></div>
@@ -61,7 +61,7 @@
                 </div>
             </div>
 
-            <div class="timelineItem">
+            <div class="timeline__items-ctnr">
                 <div class="item">
                     <span><img src="../assets/icons/contactBubble.svg"></span>
                     <div class="divider"></div>
@@ -76,71 +76,71 @@
 
         </div>
     </div>
-</div>
 
+</div>
 
 </template>
 
 <style scoped>
-.gains_ctnr {
+.gains-ctnr {
     display: flex;
     flex-direction: column;
+    padding: 35px;
     width: 100%;
-    padding: 25px
 }
-.timelineContent {
+.timeline__content {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
     flex: 1 0 0; 
+    gap: 16px;
 }
-.timelineItem {
+.timeline__items-ctnr {
     display: flex;
     flex-direction: row;
     gap: 40px
 }
-.timelineItem a {
+.timeline__items-ctnr a {
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     line-height: normal; 
 }
-.timelineItem p {
+.timeline__items-ctnr p {
     font-family: Open Sans;
     font-style: normal;
     font-weight: 400;
     line-height: normal; 
     text-align: justify;
-    
 }
 .item {
-    width: 60px;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 16px
+    gap: 16px;
+    width: 60px;
 }
 .divider {
-    width: 4px;
-    height: 95%; 
     background-color: black;
+    height: 95%; 
+    width: 4px;
 }
 .gains__img {
-    display: none; 
+    align-items: center;
     direction: row;
-    align-items: center
+    display: none; 
 }
 .gains__intro {
     padding: 25px;
     width: 100%;
 }
 @media screen and (min-width: 600px) {
-.gains_ctnr {
-    flex-direction: row;
-}
-.gains__img {
- display:flex
-}
+    .gains-ctnr {
+        flex-direction: row;
+        padding: 65px;
+    }
+    .gains__img {
+        display:flex
+    }
 }
 </style>

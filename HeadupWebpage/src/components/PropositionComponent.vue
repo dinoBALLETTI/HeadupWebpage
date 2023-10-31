@@ -1,6 +1,6 @@
 <template>
 
-    <div class="proposition-ctnr">
+    <div class="proposition__ctnr">
         <h2 class="text__1"><span class="big-text__1">Plus d’1 salarié sur 2</span> n’est pas satisfait de l’offre de formation de son entreprise.</h2>
         <h3 class="text__2">
             <p>Les formations sont souvent perçues comme étant peu collaboratives, trop descendantes et décorrélées des véritables problématiques des apprenants.</p>
@@ -15,7 +15,7 @@
 </script>
 
 <style scoped>
-.proposition-ctnr {
+.proposition__ctnr {
     background: var(--violet-darker, #300080);
     color: #FFFFFF;
     display: grid;
@@ -44,7 +44,7 @@
 }
 
 @media screen and (min-width: 600px) {
-    .proposition-ctnr {
+    .proposition__ctnr {
         align-items:center;
         column-gap: 83px;
         grid-template-columns: 1fr 1fr;

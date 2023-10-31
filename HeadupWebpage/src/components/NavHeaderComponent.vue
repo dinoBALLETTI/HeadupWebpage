@@ -22,7 +22,7 @@ const toggleMenu = () => {
         
         <div class="news__text">Message nouveauté avec lien de redirection</div>
     </div>
-<div class="nav-ctnr">
+<div class="nav__ctnr">
     
 <!-- *** DESKTOP GROUP *** -->
     <div class="nav--desktop" id="myNav">
@@ -159,7 +159,7 @@ white-space: nowrap; }
         text-decoration: none;
         color: black;
     }
-    .nav-ctnr {
+    .nav__ctnr {
         box-shadow: none;
     }
 }
