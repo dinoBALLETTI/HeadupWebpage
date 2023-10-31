@@ -1,9 +1,9 @@
 <template>
-    <div class="cta_ctnr">
-        <div class="ctaContent">
+    <div class="cta__ctnr">
+        <div class="cta__content">
         <h2>Envie d’utiliser la préparation mentale pour vos équipes ?</h2>
         <h3>Echangeons 20 minutes pour vous présenter nos solutions d’accompagnement et la plateforme Head Up. </h3>
-        <ButtonItem :text="'Réserver une démo'" :link="'your-demo-link'"/>
+        <ButtonItem :text="'Contactez-nous !'" :link="'your-demo-link'"/>
         </div>
     </div>
 </template>
@@ -13,25 +13,48 @@ import ButtonItem from './shared/ButtonItem.vue';
 </script>
 
 <style scoped>
-.cta_ctnr {
+.cta__ctnr {
     display: flex;
-width: 1513px;
-padding: 100px 65px;
+width: 100%;
+padding: 48px 35px;
 flex-direction: column;
 justify-content: center;
 align-items: flex-start;
-gap: 84.107px; 
-background: linear-gradient(0deg, rgba(9, 170, 151, 0.49) 0%, rgba(9, 170, 151, 0.49) 100%), url(../assets/medias/ctaBanner.png), lightgray 50% / cover no-repeat;
+background: linear-gradient(0deg, rgba(9, 170, 151, 0.49) 0%, rgba(9, 170, 151, 0.49) 100%), url(../assets/medias/ctaBanner.png), lightgray 50%;
 background-position: center;
-background-size: 100%;
+background-size: cover;
 }
-.ctaContent{
+.cta__content{
     display: flex;
-width: 680px;
+width: 100%;
 flex-direction: column;
 justify-content: center;
 align-items: flex-start;
-gap: 25.232px; 
+gap: 16px; 
 color: white;
+}
+.cta__content h2 {
+font-size: 24px;
+align-self: stretch;
+}
+
+.cta__content h3 {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 600px) {
+    .cta__ctnr {
+        padding: 100px 65px; 
+
+    }
+    .cta__content {
+        max-width: 680px;
+    }
+    .cta__content h2 {
+        font-size: 32px;
+    }
+    .cta__content h3 {
+        font-size: 18px;
+    }
 }
 </style>

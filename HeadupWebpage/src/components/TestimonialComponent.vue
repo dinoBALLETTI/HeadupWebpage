@@ -2,29 +2,39 @@
 
 <div class="testimonial__ctnr">
 
+    <!-- *** MOBILE GROUP *** -->
     <div class="quote__marks--start-mobile">
         <img  
         src="../assets/icons/quote-mobile.svg" 
         style="transform: rotate(179.224deg)"
         >
     </div>
-    <div class="quote__marks--start-desktop">
-        <img  
-        src="../assets/icons/quote-desktop.svg" 
-        style="transform: rotate(179.224deg)"
-        >
-    </div>
-
-    <div class="quote__text">J’essaie de changer mon discours intérieur et d’être plus positive depuis que j’ai fait le module et ça m’aide vraiment !</div>
+    
+    <div class="quote__text--mobile">J’essaie de changer mon discours intérieur et d’être plus positive depuis que j’ai fait le module et ça m’aide vraiment !</div>
     
     <div class="quote__marks--end-mobile">
         <img src="../assets/icons/quote-mobile.svg">
     </div>
-    <div class="quote__marks--end-desktop">
-        <img src="../assets/icons/quote-desktop.svg">
+    
+    
+    <!-- *** DESKTOP GROUP *** -->
+    <div class="quote-container--desktop">
+
+        
+        <div class="quote__marks--start-desktop">
+            <img  
+            src="../assets/icons/quote-desktop.svg" 
+            style="transform: rotate(179.224deg)"
+            >
+        </div>
+        
+        <div class="quote__text--desktop">J’essaie de changer mon discours intérieur et d’être plus positive depuis que j’ai fait le module et ça m’aide vraiment !</div>
+        
+        <div class="quote__marks--end-desktop">
+            <img src="../assets/icons/quote-desktop.svg">
+        </div>
+        
     </div>
-
-
 
     <div class="avatar__ctnr">
         <div class="avatar__picture"></div>
@@ -56,9 +66,11 @@
     grid-template-columns: 1;
     grid-template-rows: 4;
     padding:35px;
-    width: 100%
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
 }
-.quote__text {
+.quote__text--mobile, .quote__text--desktop {
     font-family: Open Sans;
     font-size: 14px;
     font-style: normal;
@@ -79,15 +91,13 @@
     grid-row: 4;
     justify-self: end;
 }
-.quote__marks--start-desktop {
-    display: none;
-    grid-row: 1;
+.quote-container--desktop {
+    display:none;
     grid-column: 1;
+    grid-row: 1;
+    justify-content: space-between;
 }
 .quote__marks--end-desktop {
-    display: none;
-    grid-row: 4;
-    grid-column: 1;
     justify-self: end;
 }
 .avatar__ctnr {
@@ -112,25 +122,18 @@
 }
 
 @media screen and (min-width: 600px) {
-    .quote__text{
+    .quote__text--desktop{
         font-size: 18px
     }
-    .quote__marks--start-mobile, .quote__marks--end-mobile {
+    .quote__marks--start-mobile, .quote__marks--end-mobile, .quote__text--mobile {
         display: none;
     }
+
     .testimonial__ctnr {
         padding: 100px 65px 100px 65px;
     }
-    .quote__marks--start-desktop {
-        display: grid;
-        grid-column: 1;
-        grid-row: 2;
-        position: top;
-    }
-    .quote__marks--end-desktop {
-        display: grid; 
-        grid-column: 1;
-        grid-row: 2;
+    .quote-container--desktop {
+        display: flex
     }
 }
 </style>

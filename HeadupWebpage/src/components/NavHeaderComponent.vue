@@ -62,12 +62,12 @@ const toggleMenu = () => {
 
 <style scoped>
 
-.nav-ctnr {
+.nav__ctnr {
 position: fixed;
 width: 100%;
 height: auto;
 z-index: 5;
-padding: 10px 65px 10px 65px ;
+padding: 0px 65px 0px 65px ;
 background: var(--vert-primaire-lightest, #F3FCFB);
 box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25); 
 

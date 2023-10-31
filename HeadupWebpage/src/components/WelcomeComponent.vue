@@ -55,7 +55,7 @@ import Button from './shared/ButtonItem.vue'
     .header__ctnr {
         display:flex;
         flex-direction: column;
-        padding-right: 65px;
+        padding-right: 35px;
         padding-top: 100px;
     }
     .header__btn {
