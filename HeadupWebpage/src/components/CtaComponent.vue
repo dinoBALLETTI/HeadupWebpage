@@ -15,27 +15,27 @@ import ButtonItem from './shared/ButtonItem.vue';
 <style scoped>
 .cta__ctnr {
     display: flex;
-width: 100%;
-padding: 48px 35px;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-background: linear-gradient(0deg, rgba(9, 170, 151, 0.49) 0%, rgba(9, 170, 151, 0.49) 100%), url(../assets/medias/ctaBanner.png), lightgray 50%;
-background-position: center;
-background-size: cover;
+    align-items: flex-start;
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(0deg, rgba(9, 170, 151, 0.49) 0%, rgba(9, 170, 151, 0.49) 100%), url(../assets/medias/ctaBanner.png), lightgray 50%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px 35px;
+    width: 100%;
 }
 .cta__content{
+    align-items: flex-start;
+    color: white;
     display: flex;
-width: 100%;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-gap: 16px; 
-color: white;
+    flex-direction: column;
+    gap: 16px; 
+    justify-content: center;
+    width: 100%;
 }
 .cta__content h2 {
-font-size: 24px;
-align-self: stretch;
+    align-self: stretch;
+    font-size: 24px;
 }
 
 .cta__content h3 {
