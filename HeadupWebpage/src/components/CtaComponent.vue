@@ -16,7 +16,9 @@ import ButtonItem from './shared/ButtonItem.vue';
 .cta__ctnr {
     display: flex;
     align-items: flex-start;
-    background: linear-gradient(0deg, rgba(9, 170, 151, 0.49) 0%, rgba(9, 170, 151, 0.49) 100%), url(../assets/medias/ctaBanner.png), center / cover, lightgray 50%;
+    background: linear-gradient(0deg, rgba(9, 170, 151, 0.49) 0%, rgba(9, 170, 151, 0.49) 100%), url(../assets/medias/ctaBanner.png), lightgray 50%;
+    background-position: center;
+    background-size: cover;
     flex-direction: column;
     justify-content: center;
     padding: 48px 35px;
