@@ -8,7 +8,7 @@ import Gains from '../components/GainsComponent.vue'
 import Testimonial from '../components/TestimonialComponent.vue'
 import Cta from '../components/CtaComponent.vue'
 // import Blog from '../components/BlogComponent.vue'
-// import FooterBlock from '../components/FooterBlockComponent.vue'
+import FooterBlock from '../components/FooterBlockComponent.vue'
 
 </script>
 
@@ -17,13 +17,13 @@ import Cta from '../components/CtaComponent.vue'
     <NavHeader/>
     <!-- <NavFooter /> -->
     <Welcome />
-    <!-- <Partners />     -->
+    <Partners />    
     <Proposition />
     <Gains /> 
     <Testimonial />
     <Cta />
-    <!-- <Blog /> -->
-    <!-- <FooterBlock /> -->
+    <Blog />
+    <FooterBlock />
 
 </template>
 
