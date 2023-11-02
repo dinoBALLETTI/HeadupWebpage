@@ -110,9 +110,9 @@
     padding-top: 16px;
 }
 .avatar__picture {   
+    background: url(../assets/medias/avatarLucie.png);
     background-position: center;
     background-size: 100%;
-    background: url(../assets/medias/avatarLucie.png);
     border-radius: 58.842px;
     height: 58.842px;
     width: 58.842px;
