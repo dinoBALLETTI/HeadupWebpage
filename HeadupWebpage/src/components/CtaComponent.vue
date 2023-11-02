@@ -16,9 +16,7 @@ import ButtonItem from './shared/ButtonItem.vue';
 .cta__ctnr {
     display: flex;
     align-items: flex-start;
-    background-position: center;
-    background-size: cover;
-    background: linear-gradient(0deg, rgba(9, 170, 151, 0.49) 0%, rgba(9, 170, 151, 0.49) 100%), url(../assets/medias/ctaBanner.png), lightgray 50%;
+    background: linear-gradient(0deg, rgba(9, 170, 151, 0.49) 0%, rgba(9, 170, 151, 0.49) 100%), url(../assets/medias/ctaBanner.png), center / cover, lightgray 50%;
     flex-direction: column;
     justify-content: center;
     padding: 48px 35px;
@@ -45,7 +43,6 @@ import ButtonItem from './shared/ButtonItem.vue';
 @media screen and (min-width: 600px) {
     .cta__ctnr {
         padding: 100px 65px; 
-
     }
     .cta__content {
         max-width: 680px;
