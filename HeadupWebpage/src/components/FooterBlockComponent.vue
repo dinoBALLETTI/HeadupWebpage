@@ -10,7 +10,10 @@ import TextInputItem from '../components/shared/TextInputItem.vue'
     <div class="newsletter__container">
         <img src="../assets/medias/Logo.png" style="padding-bottom: 8px;">
         <p>Ne ratez aucun de nos articles ! </p>
-        <TextInputItem :text="'Votre e-mail professionnel'" />
+        <div class="newsletter__input">
+
+            <TextInputItem :text="'Votre e-mail professionnel'" />
+        </div>
     </div>
 
     <div class="social-media__container">
@@ -58,6 +61,9 @@ import TextInputItem from '../components/shared/TextInputItem.vue'
     font-weight: 400;
     gap: 16px;
     line-height: normal;
+}
+.newsletter__input {
+    width: min(100%, 400px)
 }
 .social-media__container {
     display: flex;

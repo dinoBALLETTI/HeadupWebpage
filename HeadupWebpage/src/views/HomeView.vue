@@ -1,12 +1,12 @@
 <script setup>
-import NavHeader from '../components/NavHeaderComponent.vue'
+// import NavHeader from '../components/NavHeaderComponent.vue'
 // import NavFooter from '../components/NavFooterComponent.vue'
-import Welcome from '../components/WelcomeComponent.vue'
-import Partners from '../components/PartnersComponent.vue'
-import Proposition from '../components/PropositionComponent.vue'
-import Gains from '../components/GainsComponent.vue'
-import Testimonial from '../components/TestimonialComponent.vue'
-import Cta from '../components/CtaComponent.vue'
+// import Welcome from '../components/WelcomeComponent.vue'
+// import Partners from '../components/PartnersComponent.vue'
+// import Proposition from '../components/PropositionComponent.vue'
+// import Gains from '../components/GainsComponent.vue'
+// import Testimonial from '../components/TestimonialComponent.vue'
+// import Cta from '../components/CtaComponent.vue'
 import Blog from '../components/BlogComponent.vue'
 import FooterBlock from '../components/FooterBlockComponent.vue'
 
@@ -14,15 +14,15 @@ import FooterBlock from '../components/FooterBlockComponent.vue'
 
 <template>
 
-    <NavHeader/>
+    <!-- <NavHeader/> -->
     <!-- NavFooter have a different display priority, to use DevTools mor comfortably, comment the component and its import -->
     <!-- <NavFooter /> -->
-    <Welcome />
+    <!-- <Welcome />
     <Partners />    
     <Proposition />
     <Gains /> 
     <Testimonial />
-    <Cta />
+    <Cta /> -->
     <Blog />
     <FooterBlock />
 
