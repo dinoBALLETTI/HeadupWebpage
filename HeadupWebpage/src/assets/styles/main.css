@@ -1,15 +1,18 @@
 h1 {   
     font-family: Poppins;
     font-weight: 800;
+    color: var(--Black, #000); 
 
 }
 h2 {
     font-family: Poppins;
     font-weight: 700;
+    color: var(--Black, #000); 
 }
 h3 {
     font-family: Open Sans;
-    font-weight: 400
+    font-weight: 400;
+    color: var(--Black, #000); 
 }
 
 /* *** RESPONSIVE DESIGN *** */
@@ -20,4 +23,5 @@ h3 {
 body {
     width: 100%;
     margin: 0;
+    background-color: white;
 }

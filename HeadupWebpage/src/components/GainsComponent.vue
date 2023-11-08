@@ -7,7 +7,7 @@
         </h3>
     </div>
     
-<div class="gains-ctnr">
+<div class="gains">
     
     <div class="gains__img">
         <img 
@@ -82,7 +82,7 @@
 </template>
 
 <style scoped>
-.gains-ctnr {
+.gains {
     display: flex;
     flex-direction: column;
     padding: 35px;
@@ -92,7 +92,6 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    flex: 1 0 0; 
     gap: 16px;
 }
 .timeline__items-ctnr {
@@ -105,6 +104,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal; 
+    color: var(--Black, #000); 
 }
 .timeline__items-ctnr p {
     font-family: Open Sans;
@@ -112,6 +112,7 @@
     font-weight: 400;
     line-height: normal; 
     text-align: justify;
+    color: var(--Black, #000); 
 }
 .item {
     align-items: center;
@@ -135,7 +136,7 @@
     width: 100%;
 }
 @media screen and (min-width: 600px) {
-    .gains-ctnr {
+    .gains {
         flex-direction: row;
         padding: 65px;
     }

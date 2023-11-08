@@ -52,7 +52,12 @@
                 "
             >Lucie</a>
             
-            <a>Cheffe de produit</a>
+            <a style="
+                color: var(--Black, #000);
+                font-style: normal;
+                font-weight: 600; 
+                "
+            >Cheffe de produit</a>
         </div>
     </div>
  
@@ -79,6 +84,7 @@
     grid-row: 2;
     line-height: normal; 
     text-align: center;
+    color: var(--Black, #000);      
 }
 .quote__marks--start-mobile {
     display: grid;

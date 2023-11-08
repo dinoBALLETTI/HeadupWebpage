@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "vue": "^3.3.4",
-    "vue-router": "^4.2.4"
+    "vue-router": "^4.2.4",
+    "vue3-carousel": "^0.3.1"
   },
   "devDependencies": {
     "@playwright/test": "^1.38.0",
@@ -21,8 +22,11 @@
     "@vitejs/plugin-vue": "^4.3.4",
     "@vitejs/plugin-vue-jsx": "^3.0.2",
     "@vue/eslint-config-prettier": "^8.0.0",
+    "autoprefixer": "^10.4.16",
+    "daisyui": "^3.9.4",
     "eslint": "^8.49.0",
     "eslint-plugin-vue": "^9.17.0",
+    "postcss": "^8.4.31",
     "prettier": "^3.0.3",
     "vite": "^4.4.9"
   }
