@@ -71,18 +71,17 @@ import TextInputItem from '../components/shared/TextInputItem.vue'
 <style scoped>
 .footer__container {
     display:grid;
+    gap: 16px;
     grid-template-columns: 1;
     grid-template-rows: 4;
-    width: 100%;
     padding: 48px 35px;
-    gap: 16px;
+    width: 100%;
 }
 .social-media__container--mobile {
     grid-column: 1;
     grid-row: 2;
 }
 .newsletter__container {
-    max-width: 400px;
     align-items: flex-start;
     align-self: stretch;
     color: var(--Black, #000);
@@ -97,10 +96,9 @@ import TextInputItem from '../components/shared/TextInputItem.vue'
     grid-column: 1;
     grid-row:1;
     line-height: normal;
+    max-width: 400px;
 }
 .link__container--mobile {
-    grid-column: 1;
-    grid-row: 3;
     align-items: flex-start;
     color: var(--Black, #000);
     display: flex;
@@ -110,6 +108,8 @@ import TextInputItem from '../components/shared/TextInputItem.vue'
     font-style: normal;
     font-weight: 400;
     gap: 4px;
+    grid-column: 1;
+    grid-row: 3;
     line-height: normal;
 }
 .links__solution {
@@ -122,12 +122,12 @@ import TextInputItem from '../components/shared/TextInputItem.vue'
     display: none;
 }
 .divider {
+    align-self: stretch;
+    background: var(--Black, #000);
     grid-column: 1;
     grid-row: 4;
-    align-self: stretch;
-    width: 100%;
-    background: var(--Black, #000);
     height: 1.05px;
+    width: 100%;
 }
 .slogan__container {
     grid-column: 1;
@@ -147,8 +147,8 @@ import TextInputItem from '../components/shared/TextInputItem.vue'
 
 @media screen and (min-width:600px) {
     .footer__container {
-        grid-template-columns: 50% repeat(3, 1fr);
         gap: 40px;
+        grid-template-columns: 50% repeat(3, 1fr);
         grid-template-rows: 2;
         padding: 80px 65px; 
     }
@@ -171,11 +171,11 @@ import TextInputItem from '../components/shared/TextInputItem.vue'
         grid-row: 1;
     }
     [class^='links__'] {
+        align-items: flex-start;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 17px;
         flex: 1 0 0;   
+        gap: 17px;
     }
     .title {
         color: var(--Black, #000);
@@ -198,15 +198,15 @@ import TextInputItem from '../components/shared/TextInputItem.vue'
         grid-row: 2;
     }
     .slogan__container {
-        padding-top: 20px;
+        display: flex;
         grid-column: 1 / 5;
         grid-row: 2;
-        display: flex;
         justify-content: space-between;
+        padding-top: 20px;
     }
     .slogan--right-container {
-        flex-direction: row;
         display: flex;
+        flex-direction: row;
         gap: 25px;
     }
 }
