@@ -8,7 +8,9 @@ import FooterBlockComponent from './components/FooterBlockComponent.vue';
 <template>
     <NavHeaderComponent />
     <NavFooterComponent />
-    <FooterBlockComponent />
+    <!-- *** NavFooter have a different display priority, to use DevTools mor comfortably, comment the component and its import -->
     
     <RouterView />
+    
+    <FooterBlockComponent />
 </template>
