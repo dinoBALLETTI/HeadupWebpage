@@ -4,7 +4,7 @@ import ButtonItem from './shared/ButtonItem.vue';
 
 <template>
     <div class="footer">
-        <div class="footer__btn"><ButtonItem :text="'Réserver une démo'" /></div>
+        <div class="footer__btn"><ButtonItem :text="'/contact'" /></div>
     </div>
 </template>
 <style scoped>

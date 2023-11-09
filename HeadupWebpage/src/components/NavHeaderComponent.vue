@@ -36,7 +36,7 @@ const toggleMenu = () => {
             <a href="/blog">Notre Blog</a>
             
             <div class="nav__demo-button">
-            <ButtonItem :text="'Réserver une démo'" :link="'your-demo-link'" />
+            <ButtonItem :text="'Réserver une démo'" :link="'/contact'" />
         </div>
     </div>
 

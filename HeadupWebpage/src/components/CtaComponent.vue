@@ -1,16 +1,17 @@
+<script setup>
+import ButtonItem from './shared/ButtonItem.vue';
+</script>
+
 <template>
     <div class="cta__ctnr">
         <div class="cta__content">
         <h2>Envie d’utiliser la préparation mentale pour vos équipes ?</h2>
         <h3>Echangeons 20 minutes pour vous présenter nos solutions d’accompagnement et la plateforme Head Up. </h3>
-        <ButtonItem :text="'Contactez-nous !'" :link="'your-demo-link'"/>
+        <ButtonItem :text="'Contactez-nous !'" :link="'/contact'"/>
         </div>
     </div>
 </template>
 
-<script setup>
-import ButtonItem from './shared/ButtonItem.vue';
-</script>
 
 <style scoped>
 .cta__ctnr {
