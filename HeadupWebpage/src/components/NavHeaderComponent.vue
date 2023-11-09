@@ -108,7 +108,8 @@ white-space: nowrap; }
     display: grid;
     grid-template-columns: 85% 15%;
     align-content: center;
-    gap: 30px
+    gap: 30px;
+    height: 64px;
 }
 .links--mobile {
     display: grid;
