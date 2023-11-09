@@ -147,5 +147,8 @@ text-decoration-line: underline;
 cursor: pointer;
 }
 
+@media screen and (min-width:600px) {
+    
+}
 
 </style>

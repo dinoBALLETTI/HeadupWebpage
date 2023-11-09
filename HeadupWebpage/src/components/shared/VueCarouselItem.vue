@@ -42,6 +42,7 @@ const breakpoints = {
 .carousel__item {
   max-height: 256px;
   width: 100%;
+  padding: 0px 20px 0px 20px ;
   justify-content: center;
   align-items: center;
 
