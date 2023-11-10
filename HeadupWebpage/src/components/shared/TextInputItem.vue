@@ -12,22 +12,22 @@ defineProps('inputText')
 
 <style scoped>
 .input-field__container {
-    flex-direction: row;
-    width: 100%;
-    display: flex;
-    padding: 1.5px;
     align-items: center;
-    justify-content: flex-end;
-    gap: 8px;
-    flex-shrink: 0;
+    background: var(--White, #FFF);
     border-radius: 25px;
     border: 0.912px solid var(--grises-darkest, #20282C);
-    background: var(--White, #FFF);
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    gap: 8px;
+    justify-content: flex-end;
+    padding: 1.5px;
+    width: 100%;
 }
 input[type=text] {
     padding-left: 8px;
     width: 100%;
     background-color: none;
-    outline: none !important;
+    outline-style: none;
 }
 </style>
