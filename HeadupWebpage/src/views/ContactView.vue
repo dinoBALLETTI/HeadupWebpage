@@ -55,7 +55,7 @@ import ButtonItem from '../components/shared/ButtonItem.vue';
     display:grid;
     grid-template-columns: 1;
     grid-template-rows: 5;
-    padding: 115px 35px 80px;
+    padding: 115px 35px 40px;
     width: 100%;
     justify-items: center;
     gap: 5px
