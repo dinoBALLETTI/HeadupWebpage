@@ -44,7 +44,7 @@ import ButtonItem from '../components/shared/ButtonItem.vue';
     <div class="button"><ButtonItem :text="'Contactez-nous'"/></div>
 
     <div class="form__footer">Vous êtes un particulier et apprendre des techniques pour développer votre potentiel vous intéresse ? Notre service n’est pas disponible pour le grand public mais vous pouvez nous aider
-        <span class="rh">à contacter votre RH !  </span>👋​
+        <a class="rh" href="/hr-contact">à contacter votre RH !  </a>👋​
     </div>
 
 </div>
@@ -142,6 +142,7 @@ label {
 }
 .rh {
     color: #000;
+    cursor: pointer;
     font-family: Open Sans;
     font-size: 16px;
     font-style: normal;
