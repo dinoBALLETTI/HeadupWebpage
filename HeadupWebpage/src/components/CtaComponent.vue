@@ -27,7 +27,6 @@ import ButtonItem from './shared/ButtonItem.vue';
 }
 .cta__content{
     align-items: flex-start;
-    color: white;
     display: flex;
     flex-direction: column;
     gap: 16px; 
@@ -35,11 +34,13 @@ import ButtonItem from './shared/ButtonItem.vue';
     width: 100%;
 }
 .cta__content h2 {
+    color: white;
     align-self: stretch;
     font-size: 24px;
 }
 
 .cta__content h3 {
+    color: white;
     font-size: 16px;
 }
 

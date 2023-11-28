@@ -24,6 +24,7 @@
     width: 100%;
 }
 .text__1 {
+    color: white;
     font-size: 16px
 }
 .big-text {
